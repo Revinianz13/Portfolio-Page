@@ -3,7 +3,13 @@ import './index.scss'
 import LogoSim from '../../assets/images/logoSim.png'
 import Revinian from '../../assets/images/Revinianz_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import {
+  faEnvelope,
+  faHome,
+  faUser,
+
+} from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin, faSlack } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => {
   return (
@@ -25,10 +31,44 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
 
-        <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="contact-link"
+          to="/contact"
+        >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
       </nav>
+      <ul>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/antonios-c-031b8924b/"
+          >
+            <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/Revinianz13"
+          >
+            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.slack.com"
+          >
+            <FontAwesomeIcon icon={faSlack} color="#4d4d4e" />
+          </a>
+        </li>
+      </ul>
     </div>
   )
 }
