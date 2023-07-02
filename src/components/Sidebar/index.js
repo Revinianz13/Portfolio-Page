@@ -34,7 +34,7 @@ const Sidebar = () => {
 
         <NavLink
           exact="true"
-          activeclassname="active"
+          activeclassname="contact-link"
           className="contact-link"
           to="/contact"
         >
