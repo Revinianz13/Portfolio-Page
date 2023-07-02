@@ -4,6 +4,7 @@ import LogoSim from '../../assets/images/logoSim.png'
 import Revinian from '../../assets/images/Revinianz_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
+  faCode,
   faEnvelope,
   faHome,
   faUser,
@@ -38,6 +39,10 @@ const Sidebar = () => {
           to="/contact"
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+        </NavLink>
+
+        <NavLink exact="true" activeclassname="projects-link" className="projects-link" to="/projects">
+          <FontAwesomeIcon icon={faCode} color="#4d4d4e" />
         </NavLink>
       </nav>
       <ul>

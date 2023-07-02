@@ -1,0 +1,48 @@
+.styleme {
+  .text {  
+    font-family: 'Coolvetica';
+    color: #fff;
+    font-size: xx-large;
+  }
+  .text2 {
+    font-size: x-large;
+    color: #ffd700;
+  }
+  .text3 {
+    list-style: none;
+    color: #fff;
+    font-size: x-large;
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.projects > :first-child {
+  margin-top: 20rem;
+  margin-left: 20rem;
+}
+
+.projects > :nth-child(2) {
+  margin-top: 20rem;
+  margin-left: -20rem;
+}
+
+/* Media query for responsive layout on smaller screens */
+@media screen and (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  
+  .projects > :first-child {
+    margin-top: 20rem;
+    margin-left: 10rem;
+  }
+  
+  .projects > :nth-child(2) {
+    margin-top: 20rem;
+    margin-left: 5rem;
+  }
+}

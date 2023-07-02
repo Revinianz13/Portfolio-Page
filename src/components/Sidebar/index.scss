@@ -75,6 +75,14 @@
         }
       }
     }
+    a.projects-link{
+      svg{
+        color: #ffd700;
+      }
+      &:after{
+        content: "Projects";
+      }
+    }
     a.about-link{
       &:after{
         content: "About";
