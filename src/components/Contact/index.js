@@ -102,9 +102,9 @@ const Contact = () => {
           <br />
           Greece,
           <br />
-          Heraklion 700 03
+          Heraklion 71306
           <br />
-          St.Varvara <br />
+          Ethinikis Antistaseos 150<br />
           <span>ant.f.chlks@gmail.com</span>
         </div>
         <div className="map-wrap">
